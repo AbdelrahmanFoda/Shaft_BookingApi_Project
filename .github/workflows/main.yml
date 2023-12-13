@@ -73,7 +73,7 @@ jobs:
 
       - name: Run Tests
         continue-on-error: true
-        run: mvn test -DbrowserType="firefox" -DheadlessExecution="false"  -Dtest="${{ github.event.inputs.testsPath }}"
+        run: mvn test -DbrowserType="firefox" -DheadlessExecution="false"  -Dtest="src/test/java/BookingApiTest.java"
 
       - name: Generate Allure Report Single File
         continue-on-error: true
